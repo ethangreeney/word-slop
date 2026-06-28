@@ -1,0 +1,28 @@
+{
+  "name": "word-slop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Word Slop - a casual party game where a sentence gets worse every time it is rewritten.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "wrangler dev",
+    "start": "wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.server.json"
+  },
+  "dependencies": {
+    "preact": "^10.25.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "@preact/preset-vite": "^2.10.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8",
+    "wrangler": "^4.105.0"
+  }
+}
